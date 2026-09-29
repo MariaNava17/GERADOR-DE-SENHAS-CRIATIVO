@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROLÊ — Gerador de Rolês</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+
+  <header>
+    <a class="logo" href="#"><span>R</span>OLÊ</a>
+    <div class="header-pill">✨ Sem complicação</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">GERADOR DE ROLÊS</p>
+      <h1>Não sabe o que fazer?<br><span>Deixa o rolê escolher você.</span></h1>
+      <p class="hero-text">Escolha a companhia, o orçamento e a vibe. A gente transforma suas escolhas em uma ideia pronta para sair da rotina.</p>
+    </section>
+
+    <section class="generator">
+      <div class="setup card">
+        <div class="card-title">
+          <div>
+            <small>01 — COM QUEM?</small>
+            <h2>Escolha sua companhia</h2>
+          </div>
+          <span class="step">1/3</span>
+        </div>
+
+        <div class="options people">
+          <button class="option active" data-group="people" data-value="casal">
+            <b>❤️</b><span>Casal</span>
+          </button>
+          <button class="option" data-group="people" data-value="amigos">
+            <b>👯</b><span>Amigos</span>
+          </button>
+          <button class="option" data-group="people" data-value="familia">
+            <b>👨‍👩‍👧</b><span>Família</span>
+          </button>
+          <button class="option" data-group="people" data-value="sozinho">
+            <b>🙋</b><span>Sozinho</span>
+          </button>
+        </div>
+
+        <div class="card-title second">
+          <div>
+            <small>02 — QUANTO?</small>
+            <h2>Qual o orçamento?</h2>
+          </div>
+          <span class="step">2/3</span>
+        </div>
+
+        <div class="budget">
+          <button class="budget-btn" data-budget="0-50">R$ 0–50</button>
+          <button class="budget-btn active" data-budget="50-100">R$ 50–100</button>
+          <button class="budget-btn" data-budget="100-200">R$ 100–200</button>
+          <button class="budget-btn" data-budget="200+">R$ 200+</button>
+        </div>
+
+        <div class="card-title second">
+          <div>
+            <small>03 — QUAL A VIBE?</small>
+            <h2>Como você quer passar o tempo?</h2>
+          </div>
+          <span class="step">3/3</span>
+        </div>
+
+        <div class="vibes">
+          <button class="vibe active" data-vibe="tranquilo">🌙 Tranquilo</button>
+          <button class="vibe" data-vibe="comida">🍔 Comida</button>
+          <button class="vibe" data-vibe="aventura">🔥 Aventura</button>
+          <button class="vibe" data-vibe="diferente">🎨 Diferente</button>
+          <button class="vibe" data-vibe="romantico">✨ Romântico</button>
+          <button class="vibe" data-vibe="festa">🎉 Agitado</button>
+        </div>
+
+        <button id="generate" class="generate">🎲 GERAR MEU ROLÊ <span>→</span></button>
+      </div>
+
+      <div class="result-area">
+        <div id="result" class="result card">
+          <div class="result-placeholder">
+            <div class="dice">🎲</div>
+            <p>Seu próximo rolê<br>está esperando.</p>
+            <span>Preencha as opções e deixe a sorte decidir.</span>
+          </div>
+        </div>
+        <button id="another" class="another hidden">↻ Não gostei, gerar outro</button>
+      </div>
+    </section>
+
+    <section class="how">
+      <div>
+        <small>POR QUE USAR?</small>
+        <h2>Menos tempo decidindo.<br>Mais tempo vivendo.</h2>
+      </div>
+      <div class="features">
+        <div><span>🎯</span><b>Personalizado</b><p>O rolê muda conforme suas escolhas.</p></div>
+        <div><span>🎲</span><b>Surpreendente</b><p>Nem sempre você sabe o que vai aparecer.</p></div>
+        <div><span>💸</span><b>Dentro do bolso</b><p>O orçamento entra na escolha.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>ROLÊ © 2026 · Feito para quem cansou de perguntar “o que vamos fazer?”</footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
